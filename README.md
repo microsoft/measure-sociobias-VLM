@@ -1,4 +1,6 @@
-# MultiModalBias
-
-- start stable diffusion with webui first and select SDXL model
-- restart stable diffusion with `--api --nowebui`
+- Generate prompts for all professions using `generate_prompts.py`
+- You can then use `better_filter_prompts.py` to select a prompt per professions
+- Images can now be generated using `gen_images.py`
+- Finally all directions can be evaluated with `startotxt_infer_with_cache.py` and `startoimg_infer_with_cache.py`
+- Once this is all done, you can run additional cleanup and bias attribute id for generated images using `postprocess.py`
+- Finally a large excel can be dumped using `process_json.py`

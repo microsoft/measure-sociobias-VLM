@@ -1,0 +1,54 @@
+# coding: utf-8
+with open('./llm_resps.json', 'r') as f:
+    data = json.load(f)
+    
+import json
+with open('./llm_resps.json', 'r') as f:
+    data = json.load(f)
+    
+data.keys()
+for k, v in data.items():
+    for kk, vv in v.items():
+        print(k, kk)
+        
+for k, v in data.items():
+    for kk, vv in v.items():
+        text = vv['output'].replace('\n\n<|im_end|>', '').replace('<|im_end|>', '')
+        print(len(text.split('\n\n')[1].split('-')))
+        
+for k, v in data.items():
+    for kk, vv in v.items():
+        text = vv['output'].replace('\n\n<|im_end|>', '').replace('<|im_end|>', '')
+        print(len(text.split('\n\n')[-1].split('-')))
+        
+total = 0
+for k, v in data.items():
+    for kk, vv in v.items():
+        text = vv['output'].replace('\n\n<|im_end|>', '').replace('<|im_end|>', '')
+        total = len(text.split('\n\n')[-1].split('-'))
+        
+total
+total = 0
+for k, v in data.items():
+    for kk, vv in v.items():
+        text = vv['output'].replace('\n\n<|im_end|>', '').replace('<|im_end|>', '')
+        total += len(text.split('\n\n')[-1].split('-'))
+        
+total
+total = 0
+for k, v in data.items():
+    for kk, vv in v.items():
+        text = vv['output'].replace('\n\n<|im_end|>', '').replace('<|im_end|>', '')
+        print(text.split('\n\n')[-1].split('-'))
+        
+all_prompts = []
+for k, v in data.items():
+    for kk, vv in v.items():
+        text = vv['output'].replace('\n\n<|im_end|>', '').replace('<|im_end|>', '')
+        all_prompts.extend([x.strip() for x in text.split('\n\n')[-1].split('\n')])
+        
+print(len(pall_prompts))
+print(len(all_prompts))
+with open('./gpt4_prompts.txt', 'w') as f:
+    f.write('\n'.join(all_prompts))
+    

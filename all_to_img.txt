@@ -1,0 +1,11 @@
+txt2img
+          m   f   n
+dall-e-3 902 165  53
+sdxl     924 124  72
+codi     828  10 282
+
+img2img
+           m   f   n
+dall-e-2 1076  23  21
+sdxl      982  93  45
+codi      946  20 154 

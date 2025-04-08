@@ -1,10 +1,13 @@
-## A Unified Framework and Dataset for Assessing Societal Bias in Vision-Language Models (EMNLP Findings 2024)
+## [A Unified Framework and Dataset for Assessing Societal Bias in Vision-Language Models (EMNLP Findings 2024)](https://aclanthology.org/2024.findings-emnlp.66/)
 
 This study proposes a unified framework for systematically evaluating gender, race and age biases in VLMs with professions being the protected variable.
 
 ### Code
 
 The code can be used to evaluate bias in various models in all supported inference modes of recent VLMs such as image-to-text, text-to-text, image-to-image and text-to-image. Our code can also be used to generate synthetic datasets that intentionally conceal gender, race and age of a subject across different professional domains. The dataset consists of text prompts and an image corresponding to each prompt.
+
+#### Code credits:
+We want to thank Divyanshu Aggarwal for preparing the code for public release. 
 
 ### Dataset
 

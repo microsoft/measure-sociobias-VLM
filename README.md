@@ -11,7 +11,7 @@ We want to thank Divyanshu Aggarwal for preparing the code for public release.
 
 ### Dataset
 
-The dataset includes action-based descriptions of each profession and is used to evaluate various societal biases exhibited by vision-language models.
+The dataset includes action-based descriptions of each profession and is used to evaluate various societal biases exhibited by vision-language models. It can be downloaded from [here](https://1drv.ms/u/c/85feafee8d8062f3/EcvNq4wsR5dNmhIO_Ay4fNkBCPSPCRHXNFCmcJMnMwKOiw?e=G4JGRL).
 
 ### Findings
 
